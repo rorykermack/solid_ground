@@ -119,7 +119,7 @@ class engine {
 	
 	public function page() {
 				
-		$templates = (isset($_GET['ajax']) || isset($_GET['share']) ? array() : array('header.php','footer.php'));
+		$templates = (isset($_GET['ajax'])) ? array() : array('header.php','footer.php'));
 		
 		$template = (key($_GET) ? key($_GET).'.php' : 'home.php');
 		
